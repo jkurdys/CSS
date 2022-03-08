@@ -4,7 +4,7 @@ This report will evaluate and make recommendations about which Cold Steel produc
 
 ## Description
 
-Connective Systems & Supply is evaluating a new vendor, [Cold Steel Knife and Tool Company](https://www.coldsteel.com/), to determine which items CSS should stock from the vendor. While Cold Steel specializes in knives and edged tools generally, not all of its offerings are suitable for CSS to carry since many items do not have direct application in the construction industry. Assuming it is important to maintain the CSS brand as a construction industry supplier, I begin by identifying the Cold Steel products with the highest possibility of construction industry application. Once properly scoped, I assume that CSS would like to test the waters with a new vendor first and so would prefer to act conservatively by stocking only those items that are likely to sell and likely to make a profit. Accordingly, I recommend stocking only profitable items from the top 20 best selling construction industry items from Cold Steel.
+Connective Systems & Supply is evaluating a new vendor, [Cold Steel Knife and Tool Company](https://www.coldsteel.com/), to determine which items CSS should stock. While Cold Steel specializes in knives and edged tools generally, not all of its offerings are suitable for CSS to carry since many items do not have direct application in the construction industry. Assuming it is important to maintain the CSS brand as a construction industry supplier, I begin by identifying the Cold Steel products with the highest possibility of construction industry application. Once properly scoped, I assume that CSS would like to test the waters with a new vendor first and so would prefer to act conservatively by stocking only those items that are likely to sell and likely to make a profit. Accordingly, I recommend stocking only profitable items from the top 20 best selling construction industry items from Cold Steel.
 
 ## Table of Contents
 
@@ -31,13 +31,13 @@ This repo is organized into the following file structure:
 * CSS Home Directory
     * README
     * [Data](https://github.com/jkurdys/CSS/tree/main/data) Directory: all source and output data saved as CSVs
-        * source data cold_steel.csv
-        * output data
+        * source data `cold_steel.csv`
+        * output data recommendations
     * [Images](https://github.com/jkurdys/CSS/tree/main/images) Directory: Explanatory charts from EDA notebook
-    * [Notebooks](https://github.com/jkurdys/CSS/tree/main/notebooks) Directory: Exploratory Data Analysis with project walthrough and findings
+    * [Notebooks](https://github.com/jkurdys/CSS/tree/main/notebooks) Directory: Exploratory Data Analysis with project walkthrough and findings
 
 ## Project Summary
-Overview of the project's data, approach and findings. A complete description of the project can be found in the EDA notebook.
+Overview of the project's data, approach and findings. A complete description of the project can be found in the [EDA notebook.](notebooks/EDA.ipynb)
 
 ### Data
 Project data originates with `cold_steel.csv`. The flat file contains 553 entries and 39 columns. Each record contains Cold Steel product information such as
@@ -97,15 +97,15 @@ Carrying 44 of 45 lines of profitable construction items would yield an average 
 
 ![](images/averageMarginBestsellersPlotScoped.png)
 
-Selecting the items found in the `conservative_recs.csv` file represents the most conservative approach of stocking the fewest items with the highest likelihood of selling and producing a profit.
+**Selecting the items found in the `conservative_recs.csv` file represents the most conservative approach of stocking the fewest items with the highest likelihood of selling and producing a profit.**
 
 A slightly more risky set of recommendations found in the `full_recs.csv` file includes additional items drawn from professional experience in construction and yields an average estimated profit margin of more than 10 percent.
 
 ![](images/averageMarginAllRecsPlot.png)
 
 ### Findings
-Although stocking nearly all of the profitable construction scoped items from Cold Steel offers the highest average profit margin of more than 12 percent, I still find it prudent to select a more conservative option that selects 11 product lines and achieves a more than 10 percent average profit margin.
-Complete product information for these product lines can be found in the `data` directory under `full_recs.csv`
+Although stocking nearly all of the profitable construction scoped items from Cold Steel offers the highest average profit margin of more than 12 percent, I still find it prudent to select a more conservative option that selects 12 product lines and achieves a more than 10 percent average profit margin.
+Complete product information for these product lines can be found in the `data` directory as `full_recs.csv`
 
 <!-- ## Getting Started
 
